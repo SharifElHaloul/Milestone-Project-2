@@ -1,13 +1,19 @@
 /*------------------------------------ Header */
 
+
+.header-banner {
+    padding: 15px;
+    background-color: #114951;
+}
+
 .logo-main h2 {
     font-size: 300%;
-    border: 2px solid #F9F871;
     border-radius: 15px;
     max-width: 550px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 5px;
+    color: #fbfcfc;
     
     
 }
@@ -26,31 +32,33 @@
 }
 
 .nav-link a {
-    color: #D65DB1;
-    padding: 5px;
+    color: #fbfcfc;
+    padding: 10px;
     font-family: "Tilt Neon", sans-serif;
     transition: all 0.35s ease-in-out;
     
 }
 
 .nav-link a:hover {
-    color: #8bf2fc;
+    color: #F1693C;
     text-decoration: none;
-    border-bottom: 1px dashed #F9F871;
+    
 }
 
 .active {
-    border-bottom: 1px solid #F9F871;
+    border: 2px solid #fbfcfc;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 
 .fa-bars {
-    color: #D65DB1;
+    color: #fbfcfc;
     padding-top: 4px;
 }
 
 .navbar-toggler {
-    border: 2px solid #D65DB1;
+    border: 2px solid #fbfcfc;
     height: 50px;
     margin-right: 20px;
 }
@@ -58,3 +66,37 @@
 .text-right {
     padding-right: 20px;
 }
+
+
+/*------------------------------------ Info section */
+
+.info-section {
+    background-color: #477a82;
+}
+
+.about-us, .what-we-do {
+    color: #fafafa;
+    text-align: center;
+    padding: 50px 100px;
+    font-size: 110%;
+}
+
+.about-us h2, .what-we-do h2 {
+    color: #ff8d3e;
+    font-family: "Tilt Neon", sans-serif;
+}
+
+.button-section {
+    text-align: center;
+    background-color: #477a82;
+    padding-top: 100px;
+}
+.btn-outline-warning {
+    color: #befbff;
+    border-color: #befbff;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+
+
