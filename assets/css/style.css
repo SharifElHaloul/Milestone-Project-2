@@ -1,0 +1,60 @@
+/*------------------------------------ Header */
+
+.logo-main h2 {
+    font-size: 300%;
+    border: 2px solid #F9F871;
+    border-radius: 15px;
+    max-width: 550px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    
+    
+}
+
+.logo-main:hover {
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 150%;
+}
+
+.navbar {
+    padding: 0;
+    
+}
+
+.nav-link a {
+    color: #D65DB1;
+    padding: 5px;
+    font-family: "Tilt Neon", sans-serif;
+    transition: all 0.35s ease-in-out;
+    
+}
+
+.nav-link a:hover {
+    color: #8bf2fc;
+    text-decoration: none;
+    border-bottom: 1px dashed #F9F871;
+}
+
+.active {
+    border-bottom: 1px solid #F9F871;
+}
+
+
+.fa-bars {
+    color: #D65DB1;
+    padding-top: 4px;
+}
+
+.navbar-toggler {
+    border: 2px solid #D65DB1;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.text-right {
+    padding-right: 20px;
+}
