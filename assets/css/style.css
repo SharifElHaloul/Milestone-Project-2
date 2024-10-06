@@ -91,8 +91,10 @@
     font-family: "Poppins", sans-serif;
     border: 3px solid #fafafa;
     border-radius: 10px;
-    
+    height: 100%;
 }
+
+
 
 
 
@@ -106,17 +108,22 @@
     
 }
 
+.challenge-text p {
+    padding-top: 50px;
+}
+
 .button-section {
     text-align: center;
     background-color: #477a82;
     padding-top: 100px;
 }
 .btn-outline-warning {
-    color: #befbff;
-    border-color: #befbff;
+    color: #ff8d3e;
+    border-color: #ff8d3e;
     border-width: 3px;
     border-radius: 10px;
     font-size: 30px;
+    font-family: "Permanent Marker", sans-serif;
 }
 
 .challenge-border {
@@ -124,5 +131,24 @@
     padding-bottom: 20px;
 }
 
+.index-cards {
+    height: 100px;
+}
+
+.fa-square-check {
+    font-size: 50px;
+}
+
+.fa-fire {
+    padding-right: 5px;
+    color: #befbff;
+    font-size: 120%;
+}
+
+.fa-brain, .fa-equals, .fa-sack-dollar {
+    font-size: 300%;
+    padding-top: 100px;
+    padding-right: 20px;
+}
 
 
