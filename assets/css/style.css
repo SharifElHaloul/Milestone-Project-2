@@ -209,6 +209,12 @@
 .whole-game {
     text-align: center;
     background-color: #477a82;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.whole-game h2 {
+    padding-bottom: 20px;
 }
 
 #board {
@@ -219,6 +225,7 @@
     flex-wrap: wrap;
     background-color: #114951;
     border: 10px solid #ff8d3e;
+    
 }
 
 .card {
