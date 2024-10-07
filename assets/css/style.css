@@ -208,6 +208,7 @@
 
 .whole-game {
     text-align: center;
+    background-color: #477a82;
 }
 
 #board {
@@ -217,7 +218,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #114951;
-    border: 10px solid lightgray;
+    border: 10px solid #ff8d3e;
 }
 
 .card {
