@@ -157,16 +157,16 @@
     font-size: 70%;
 }
 
-.timetable, .socials, .copyright {
+.contact-us, .socials, .copyright {
     text-align: center;
     color: #fafafa;
 }
 
-.timetable p, .copyright p {
+.contact-us p, .copyright p {
     color:#ff8d3e;
 }
 
-.cv-pdf i {
+.contact-link i {
     font-size: 18px;
     color: #fafafa;
     text-align: center;
@@ -175,7 +175,7 @@
     
 }
 
-.cv-pdf i:hover {
+.contact-link i:hover {
     color: #8bf2fc;
 }
 

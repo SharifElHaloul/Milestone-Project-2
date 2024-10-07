@@ -26,3 +26,9 @@ Before:
 After:
 
 ![Bottom border bug](assets/images/bottom-border-bug-after.png)
+
+4. Was having an issue trying to transition betwene two images when hovering over it on the main page to instruct the player. With CSS i would have had to using background images to solve sthis issue so instead I decided to use javascript on the images to make them change on hover or stay flipped over.
+
+```js
+onmouseover="this.src='assets/images/eye.png';" onmouseout="this.src='assets/images/card-back.png';"
+```
