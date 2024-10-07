@@ -204,4 +204,26 @@
     
 }
 
+/*------------------------------------ game */
+
+.whole-game {
+    text-align: center;
+}
+
+#board {
+    height: 532px;
+    width: 380px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #114951;
+    border: 10px solid lightgray;
+}
+
+.card {
+    height: 128px;
+    width: 90px;
+    margin: 2.5px;
+}
+
 
