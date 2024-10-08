@@ -234,4 +234,12 @@
     margin: 2.5px;
 }
 
+.reset {
+    padding: 10px 15px;
+    margin-top: 20px;
+    color: #fafafa;
+    background-color: #ff8d3e;
+    font-size: 1.5em;
+}
+
 
