@@ -15,6 +15,9 @@ var board = [];
 var rows = 4;
 var columns = 4;
 
+var card1Selected;
+var card2Selected;
+
 window.onload = function () {
     shuffleCards();
     startGame();
@@ -43,6 +46,7 @@ function startGame() {
             card.id = r.toString() + "-" + c.toString();
             card.src = cardImg + ".png";
             card.classList.add("card");
+            card.addEventListener("click", selectCard);
             document.getElementById("board").append(card);
         }
         board.push(row);
@@ -56,6 +60,30 @@ function hideCards() {
         for (let c = 0; c < columns; c++) {
             let card = document.getElementById(r.toString() + "-" + c.toString());
             card.src = "assets/images/card-back.png";
+        }
+    }
+}
+
+function selectCard() {
+    if (this.src.includes("card-back")) {
+        if (!card1Selected) {
+            card1Selected = this;
+
+            let coords = card1Selected.id.split("-");
+            let r = parseInt(coords[0]);
+            let c = parseInt(coords[1]);
+            
+
+            card1Selected.src = board[r][c] + ".png";
+        }
+        else if (!card2Selected && this != card1Selected) {
+            card2Selected = this;
+
+            let coords = card2Selected.id.split("-");
+            let r = parseInt(coords[0]);
+            let c = parseInt(coords[1]);
+
+            card2Selected.src = board[r][c] + ".png";
         }
     }
 }
