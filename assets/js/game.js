@@ -85,49 +85,41 @@ function hideCards() {
 function selectCard() {
     if (card1Selected && card2Selected) return;
 
-    if (this.src.includes("card-back")) {
+    if (!this.classList.contains("flipped")) {
+
         if (!card1Selected) {
             card1Selected = this;
+            card1Selected.classList.add("flipped");
 
-            let coords = card1Selected.id.split("-");
-            let r = parseInt(coords[0]);
-            let c = parseInt(coords[1]);
-
-
-            card1Selected.src = board[r][c] + ".png";
         } else if (!card2Selected && this != card1Selected) {
             card2Selected = this;
+            card2Selected.classList.add("flipped");
 
-            let coords = card2Selected.id.split("-");
-            let r = parseInt(coords[0]);
-            let c = parseInt(coords[1]);
-
-            card2Selected.src = board[r][c] + ".png";
             setTimeout(update, 1000);
-
-
         }
-
-
     }
 }
 
 
 function update() {
-    if (card1Selected.src != card2Selected.src) {
-        card1Selected.src = "assets/images/card-back.png";
-        card2Selected.src = "assets/images/card-back.png";
+    if (card1Selected.querySelector(".front").src != card2Selected.querySelector(".front").src) {
+        setTimeout(() => {
+            card1Selected.classList.remove("flipped");
+            card2Selected.classList.remove("flipped");
+            card1Selected = null;
+            card2Selected = null;
+        }, 1000);
         errors += 1;
         document.getElementById("errors").innerText = errors;
+
     } else {
         matches += 1;
+        card1Selected = null;
+        card2Selected = null;
         if (matches === cardList.length) {
             setTimeout(() => {
-                alert("Congratulations! You have matched all the cards!");
+                alert("Congratulations! You've matched all the cards!")
             }, 500);
         }
     }
-
-    card1Selected = null;
-    card2Selected = null;
 }
