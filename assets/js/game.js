@@ -18,7 +18,6 @@ var matches = 0;
 var card1Selected;
 var card2Selected;
 
-var card2Amount = [];
 
 
 window.onload = function () {
@@ -35,7 +34,6 @@ function shuffleCards() {
         cardSet[i] = cardSet[j];
         cardSet[j] = temp;
     }
-    console.log(cardSet);
 }
 
 function startGame() {
@@ -50,50 +48,56 @@ function startGame() {
             card.id = r.toString() + "-" + c.toString();
             card.addEventListener("click", selectCard);
 
+            let back = document.createElement("img");
+            back.classList.add("back");
+            back.src = "assets/images/card-back.png";  
+
             let front = document.createElement("img");
             front.classList.add("front");
             front.src = cardImg + ".png";
 
-            let back = document.createElement("img");
-            back.classList.add("back");
-            back.src = "assets/images/card-back.png";
-
+              
             card.append(front);
             card.append(back);
-
+            
+            
             document.getElementById("board").append(card);
 
         }
         board.push(row);
     }
-    console.log(board);
 
-    setTimeout(hideCards, 3000);
-
+    setTimeout(() => {
+        hideCards();
+    }, 3000);
 }
+
 
 function hideCards() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
             let card = document.getElementById(r.toString() + "-" + c.toString());
-            card.src = "assets/images/card-back.png";
+            card.classList.add("spinny");
         }
     }
 }
 
 
+
+
 function selectCard() {
     if (card1Selected && card2Selected) return;
 
+
     if (!this.classList.contains("flipped")) {
+        this.classList.add("flipped");
 
         if (!card1Selected) {
             card1Selected = this;
-            card1Selected.classList.add("flipped");
 
         } else if (!card2Selected && this != card1Selected) {
             card2Selected = this;
-            card2Selected.classList.add("flipped");
+
 
             setTimeout(update, 1000);
         }
@@ -108,6 +112,7 @@ function update() {
             card2Selected.classList.remove("flipped");
             card1Selected = null;
             card2Selected = null;
+            
         }, 1000);
         errors += 1;
         document.getElementById("errors").innerText = errors;
@@ -121,5 +126,6 @@ function update() {
                 alert("Congratulations! You've matched all the cards!")
             }, 500);
         }
+       
     }
 }

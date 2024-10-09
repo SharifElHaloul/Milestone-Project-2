@@ -219,8 +219,8 @@
 }
 
 #board {
-    height: 555px;
-    width: 400px;
+    height: 648px;
+    width: 423px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -246,11 +246,11 @@
 }
 
 .card .front {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
 }
 
 .card .back {
-    transform: rotateY(0deg);
+    transform: rotateY(180deg)
 }
 
 .card.flipped .front {
@@ -260,6 +260,17 @@
 .card.flipped .back {
     transform: rotateY(180deg);
 }
+
+.spinny .front{
+    transform: rotateY(180deg);
+    
+}
+
+.spinny .back{
+    transform: rotateY(0deg);
+}
+
+
 
 .reset {
     padding: 10px 15px;
