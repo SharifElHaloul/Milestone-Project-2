@@ -32,3 +32,18 @@ After:
 ```js
 onmouseover="this.src='assets/images/eye.png';" onmouseout="this.src='assets/images/card-back.png';"
 ```
+
+5. I was finding it diffult to find a way to count the number of succesful matches to add a popup message to say when the player had succesfully completed the match. I added this code to start with but found it was just counting second cards not successful matches:
+
+```js
+matches += 1;
+            if (matches === cardList.length) {
+                alert("You win!");
+            }
+```
+
+After some research I found that the best way was to create a variable from scratch and create an 'else' for my update function which would then count the successful matches. When the succsessful matches  matches the card length string it would result in a win message using the following code:
+
+```js
+
+```

@@ -5,7 +5,8 @@
 
 .header-banner {
     padding: 15px;
-    background-color: #114951;
+    /*background-color: #114951; */
+    background-image: linear-gradient(#114951, #477a82);
 }
 .logo-main{
     padding-left: 30px;
@@ -115,7 +116,7 @@
 .button-section {
     text-align: center;
     background-color: #477a82;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .btn-outline-warning {
     color: #ff8d3e;
@@ -199,7 +200,7 @@
 }
 
 #footer-details {
-    background-color: #114951;
+    background-image: linear-gradient(#477a82, #114951);
     padding: 27px;
     
 }
