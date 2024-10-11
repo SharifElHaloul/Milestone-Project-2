@@ -311,7 +311,7 @@ body {
 }
 
 .form-group {
-    width: 70%;
+    width: 60%;
     margin: auto;
     padding-top: 30px;
 }
@@ -342,4 +342,10 @@ body {
     display: flex;
     justify-content: center;
     
+}
+
+/*------------------------------------ thank you page */
+
+#counter {
+    padding-left: 10px;
 }
