@@ -225,6 +225,7 @@ body {
 
 .whole-game h2 {
     padding-bottom: 20px;
+    color: #fafafa;
 }
 
 #board {
@@ -315,3 +316,30 @@ body {
     padding-top: 30px;
 }
 
+.btn-primary {
+    background-color: #ff8d3e;
+    color: #fafafa;
+    margin-top: 20px;
+    border-color: #fafafa;
+}
+
+.btn-primary:hover {
+    background-color: #F1693C;
+    border-color: #fafafa;
+}
+
+/*------------------------------------ 404 page */
+
+.errorpage-main {
+    background-color: #477a82;
+    color: #fafafa;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.container-fluid.errorpage-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    
+}
