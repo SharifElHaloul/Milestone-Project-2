@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*------------------------------------ Header */
+/*------------------------------------ Body */
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+/*------------------------------------ Header */
 
 .header-banner {
     padding: 15px;
@@ -280,4 +289,29 @@
     font-size: 1.5em;
 }
 
+/*------------------------------------ Contact-section */
+
+.contact-whole {
+    text-align: center;
+    background-color: #477a82;
+    color: #fafafa;
+    font-family: "poppins", sans-serif;
+}
+
+.container-fluid.contact-whole {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.contact-form {
+    width: 100%; 
+}
+
+.form-group {
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+}
 

@@ -45,5 +45,16 @@ matches += 1;
 After some research I found that the best way was to create a variable from scratch and create an 'else' for my update function which would then count the successful matches. When the succsessful matches  matches the card length string it would result in a win message using the following code:
 
 ```js
-
+else {
+        matches += 1;
+        card1Selected = null;
+        card2Selected = null;
+        if (matches === cardList.length) {
+            setTimeout(() => {
+                alert("Congratulations! You've matched all the cards!")
+            }, 500);
+        }
+       
+    }
 ```
+
