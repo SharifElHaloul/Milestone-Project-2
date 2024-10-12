@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*------------------------------------ Body */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -10,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 /*------------------------------------ Header */
 
 .header-banner {
@@ -17,24 +19,25 @@ body {
     /*background-color: #114951; */
     background-image: linear-gradient(#114951, #477a82);
 }
-.logo-main{
+
+.logo-main {
     padding-left: 30px;
 }
 
 
 .logo-main img {
-    
+
     border-radius: 50%;
     width: 150px;
     height: 150px;
     animation: fadeIn 0.5s ease-in-out 0.5s forwards;
-    
+
 
 }
 
 .logo-main:hover {
     text-decoration: none;
-    
+
 }
 
 .nav-link {
@@ -43,7 +46,7 @@ body {
 
 .navbar {
     padding: 0;
-    
+
 }
 
 .nav-link a {
@@ -51,13 +54,13 @@ body {
     padding: 10px;
     font-family: "poppins", sans-serif;
     transition: all 0.35s ease-in-out;
-    
+
 }
 
 .nav-link a:hover {
     color: #F1693C;
     text-decoration: none;
-    
+
 }
 
 .active {
@@ -93,7 +96,8 @@ body {
     font-size: 110%;
 }
 
-.how-to-text, .challenge-text  {
+.how-to-text,
+.challenge-text {
     color: #fafafa;
     text-align: center;
     padding: 50px 100px;
@@ -108,14 +112,15 @@ body {
 
 
 
-.how-to h2, .challenge-text h2 {
+.how-to h2,
+.challenge-text h2 {
     color: #ff8d3e;
     font-family: "Permanent Marker", sans-serif;
 }
 
 .how-to-text p {
     padding-top: 50px;
-    
+
 }
 
 .challenge-text p {
@@ -127,6 +132,7 @@ body {
     background-color: #477a82;
     padding-top: 50px;
 }
+
 .btn-outline-warning {
     color: #ff8d3e;
     border-color: #ff8d3e;
@@ -155,7 +161,9 @@ body {
     font-size: 120%;
 }
 
-.fa-brain, .fa-equals, .fa-sack-dollar {
+.fa-brain,
+.fa-equals,
+.fa-sack-dollar {
     font-size: 300%;
     padding-top: 100px;
     padding-right: 20px;
@@ -167,13 +175,16 @@ body {
     font-size: 70%;
 }
 
-.contact-us, .socials, .copyright {
+.contact-us,
+.socials,
+.copyright {
     text-align: center;
     color: #fafafa;
 }
 
-.contact-us p, .copyright p {
-    color:#ff8d3e;
+.contact-us p,
+.copyright p {
+    color: #ff8d3e;
 }
 
 .contact-link i {
@@ -182,7 +193,7 @@ body {
     text-align: center;
     padding-left: 5px;
     transition: all 0.35s ease-in-out;
-    
+
 }
 
 .contact-link i:hover {
@@ -198,10 +209,10 @@ body {
     font-size: 13px;
     line-height: 7px;
     text-align: center;
-    color:#fafafa;
+    color: #fafafa;
     background: #ff8d3e;
     transition: all 0.35s ease-in-out;
-    
+
 }
 
 .social-links li a i:hover {
@@ -211,7 +222,7 @@ body {
 #footer-details {
     background-image: linear-gradient(#477a82, #114951);
     padding: 27px;
-    
+
 }
 
 /*------------------------------------ game */
@@ -236,7 +247,7 @@ body {
     flex-wrap: wrap;
     background-color: #114951;
     border: 10px solid #ff8d3e;
-    
+
 }
 
 .card {
@@ -271,12 +282,12 @@ body {
     transform: rotateY(180deg);
 }
 
-.spinny .front{
+.spinny .front {
     transform: rotateY(180deg);
-    
+
 }
 
-.spinny .back{
+.spinny .back {
     transform: rotateY(0deg);
 }
 
@@ -303,11 +314,11 @@ body {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .contact-form {
-    width: 100%; 
+    width: 100%;
 }
 
 .form-group {
@@ -341,7 +352,7 @@ body {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    
+
 }
 
 /*------------------------------------ thank you page */
@@ -353,15 +364,16 @@ body {
 /*------------------------------------ Media */
 
 @media (max-width: 768px) {
-    .how-to-text  {
+    .how-to-text {
         padding: 50px 50px;
     }
+
     .border-div {
         padding-bottom: 10px;
     }
- }
+}
 
- @media (max-width: 576px) {
+@media (max-width: 576px) {
     .how-to {
         padding: 5px;
     }
@@ -387,4 +399,21 @@ body {
         width: 60px;
         height: 100px;
     }
- }
+
+    .thank-you h2 {
+        font-size: 8px;
+        padding-top: 10px;
+    }
+
+
+    .errorpage-main {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .errorpage-main h2 {
+        font-size: 15px;
+    }
+}
