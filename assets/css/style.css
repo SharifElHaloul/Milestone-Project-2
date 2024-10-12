@@ -349,3 +349,42 @@ body {
 #counter {
     padding-left: 10px;
 }
+
+/*------------------------------------ Media */
+
+@media (max-width: 768px) {
+    .how-to-text  {
+        padding: 50px 50px;
+    }
+    .border-div {
+        padding-bottom: 10px;
+    }
+ }
+
+ @media (max-width: 576px) {
+    .how-to {
+        padding: 5px;
+    }
+
+    .challenge-text {
+        padding: 5px;
+    }
+
+    .border-div {
+        padding: 15px;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    #board {
+        width: 260px;
+        height: 425px;
+    }
+
+    .card {
+        width: 60px;
+        height: 100px;
+    }
+ }
