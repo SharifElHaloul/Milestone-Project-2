@@ -1,3 +1,5 @@
+// variable storage section
+
 var errors = 0;
 var cardList = [
     "assets/images/alarm",
@@ -19,12 +21,14 @@ var card1Selected;
 var card2Selected;
 
 
-
+//Function list
 window.onload = function () {
     shuffleCards();
     startGame();
 }
 
+
+// Function to shuffle the cards up
 function shuffleCards() {
     cardSet = cardList.concat(cardList);
     console.log(cardSet);
@@ -36,6 +40,7 @@ function shuffleCards() {
     }
 }
 
+//Function to start the game
 function startGame() {
     for (let r = 0; r < rows; r++) {
         let row = [];
@@ -67,12 +72,12 @@ function startGame() {
         board.push(row);
     }
 
-    setTimeout(() => {
+    setTimeout(() => {     // Shows then hides the cards for 3 seconds
         hideCards();
     }, 3000);
 }
 
-
+//Function for hiding the cards
 function hideCards() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
@@ -84,7 +89,7 @@ function hideCards() {
 
 
 
-
+//Function to be able to select a card
 function selectCard() {
     if (card1Selected && card2Selected) return;
 
@@ -104,7 +109,7 @@ function selectCard() {
     }
 }
 
-
+//Function to update the error score based on a correct or incorrrect match
 function update() {
     if (card1Selected.querySelector(".front").src != card2Selected.querySelector(".front").src) {
         setTimeout(() => {

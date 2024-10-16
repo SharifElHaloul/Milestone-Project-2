@@ -1,3 +1,5 @@
+
+// Function to send off the contact information or bring up an error if not completed correctly
 function sendMail(contactForm) {
     emailjs.send("service_u4rrwc7","Braintraingame", {
         "from_name": contactForm.fullname.value,
