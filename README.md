@@ -1,3 +1,19 @@
+# Brain Train Game
+
+For 
+
+## Table of Contents
+
+1. [Planning & Development](#planning--development)
+2. [Features](#features)
+3. [Testing](#testing)
+4. [Deployment](#deployment)
+5. [Languages](#languages)
+6. [Media Queries](#media-queries)
+7. [Software](#software)
+8. [Code](#code)
+9. [Credits](#credits)
+
 ## Bugs found and fixed during coding
 
 1. could not seem to create a gap between two borders when using bootsrtap due to the gutter in between. I eventually solved this by adding an extra div inside the columns which allowed me to add padding to the borders and create two seperate boxes.

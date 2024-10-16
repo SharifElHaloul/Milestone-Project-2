@@ -371,6 +371,12 @@ body {
     .border-div {
         padding-bottom: 10px;
     }
+
+    .thank-you h2 {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
 }
 
 @media (max-width: 576px) {
