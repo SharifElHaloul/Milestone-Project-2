@@ -312,4 +312,21 @@ else {
 
 ## Validator testing
 
+### W3C Validator
+
+I ran my site through the W3C validator and recieved the following 3 errors:
+
+![W3C validator](assets/images/w3c-html.png)
+
+Fixed all three errors now result has no errors.
+
+### CSS Jigsaw Validator
+
+I ran my site through the CSS Jigsaw Validator and recieved this message showing no errors:
+
+![CSS Validator](assets/images/CSS-validator.png)
+
+###
+
+
 
