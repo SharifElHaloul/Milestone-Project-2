@@ -326,7 +326,92 @@ I ran my site through the CSS Jigsaw Validator and recieved this message showing
 
 ![CSS Validator](assets/images/CSS-validator.png)
 
-###
+### Lighthouse Performance testing
 
+Using the Chrome Developer Tools Lighthouse reports, I was able to test the performance of my site pages and improve it as a result.
 
+### Desktop
 
+My desktop performance came out as follows:
+
+![lighthouse validator](assets/images/lighthouse-score.png)
+
+As seen the scores were all good so no major changes needed on desktop
+
+### Mobile
+
+My mobile performance came out as follows:
+
+![Lighthouse mobile validator](assets/images/lighthouse-mobile-score.png)
+
+As seen the scores were all good so no major changes needed on mobile
+
+## JS Hint Testing
+
+I ran both of my Javascript files through this JS Hint validator.
+
+The first file came back with some missing semi-colons which I removed and then came back with no errors.
+
+The second file came back clean apart from mentioning an unused variable and an undefined variable for the send-email.js code, but this is because they are declared/used within the html code.
+
+# Deployment
+
+## GitHub pages
+I used GitHub pages to deploy my site. This required me to go to my project repository and then:
+1. Click on the 'Settings' tab.
+2. Select 'Pages' from the menu that appears on the left.
+3. Select 'Deploy from a branch'.
+4. Select 'Main' in the drop-down menu called 'Select Branch'.
+5. Then alongside 'Main', there is a folder dropdown where you select '/Root'.
+6. Click 'Save' button.
+7. Refresh the page and a link to the live project will appear at the top of the page.
+
+## Forking a GitHub repository
+Forking allows users to make a copy of an original repository in GitHub and view and make changes to it without changing the original repository.
+To create a fork:
+1. Once logged into GitHub, follow the link to your chosen GitHub repository, or use the search bar to find it on the GitHub home page.
+2. Once in the repository window, click the 'Fork' drop down arrow button in the top right-hand corner.
+3. Select 'Create new fork'.
+4. Check the details in the window before clicking the green 'Create Fork' button.
+5. You will now be able to find the copy of the repository in your own GitHub account.
+
+## Making a Local Clone
+1. Once logged into GitHub, follow the link to your chosen GitHub repository, or use the search bar to find it on the GitHub home page.
+2. Once in the repository window, click the green 'Code' button.
+3. To clone the repository using HTTPS, copy the link provided below the HTTPS header.
+4. Open a terminal in your code editor.
+5. Change the location in the current working directory to where you want the cloned directory to be created.
+6. Type "git clone" into the terminal, and then paste the URL you copied and click enter.
+7. This should have created a local clone of the repository.
+
+Here is a link to my live website - <https://sharifelhaloul.github.io/Milestone-Project-2/index.html>
+
+# Languages
+
+* I used HTML, CSS, Javascript and JQuery to create this site.
+* Bootstrap v42 was used and built upon for creating the general layout with its grid system.
+
+# Media Queries
+
+* I used Media Queries to debug and override some display issues that were not rectified with Bootstrap's responsive layouts.
+
+# Software
+
+* I used Visual Studio Code to create, edit, preview and push my code to my Github repository.
+* Git and Github for version control.
+* Balsamiq for wireframes.
+* EmailJS was used in the background to help me create a functional contact form.
+
+# Code
+
+* **Contact form** - this was based on the code used in the 'Putting it all together' emailJS exercises of Milestone 2 on Code Institute.
+
+* **Footer** - code is based on the code used in the 'Love Running' exercise of Code Institute.
+
+* **Thank-you page** - I used this code snippet to get the Thank You page to re-direct back to the site after 5 seconds. This was from a [Stack Overflow thread.](https://stackoverflow.com/questions/3292038/redirect-website-after-specified-amount-of-time)
+![Re-direct for the thank you page code snippet](assets/readme-images/redirect-code-snippet.png)
+
+### Thanks
+
+* The Bristol College staff who have been very patient with all of the issues I have been having which affected the making of the project.
+* My family who have also been very patient whilst I have taken the time to do this assignment.

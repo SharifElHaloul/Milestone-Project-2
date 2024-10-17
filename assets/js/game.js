@@ -1,3 +1,5 @@
+
+/*jshint esversion: 6 */
 // variable storage section
 
 var errors = 0;
@@ -10,7 +12,7 @@ var cardList = [
     "assets/images/moon",
     "assets/images/sun",
     "assets/images/key"
-]
+];
 
 var cardSet;
 var board = [];
@@ -25,7 +27,7 @@ var card2Selected;
 window.onload = function () {
     shuffleCards();
     startGame();
-}
+};
 
 
 // Function to shuffle the cards up
@@ -128,7 +130,7 @@ function update() {
         card2Selected = null;
         if (matches === cardList.length) {
             setTimeout(() => {
-                alert("Congratulations! You've matched all the cards!")
+                alert("Congratulations! You've matched all the cards!");
             }, 500);
         }
        
