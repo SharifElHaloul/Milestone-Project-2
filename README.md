@@ -134,17 +134,121 @@ If they have completed the challenge and want more information they can use the 
 
  * I created my simple logo using Canva.com and matched the colours to create a cohesive effect.
 
- ## Instructions page
+ ### Instructions page
 
- ![Instructions page](assets/images/)
+ ![Instructions page](assets/images/how-to-play-screen.png)
 
+ * I made a nice and easy initial page that clearly lists the instructions and the challenge rules.
 
+ ### Navigation bar
 
+ ![Navigation bar](assets/images/nav-bar.png)
 
+ * I have created an easy and nicely visible navigation bar has a changing border around the selected page.
 
+ ### Footer
 
+ ![Footer](assets/images/footer.png)
 
+ * I have created a detailed and colour coordinated footer that allows the reader to jump to the contact page using the envelope icon. It also allows the user to access all our social media via the other four icons.
 
+ ![Brain game screen](assets/images/brain-game-screen.png)
+
+ * I have created am interactive page with a fun memeory card game. The cards flip over for three seconds then the user has to find as many matches as possible with as few errors as possible.
+
+ ![Contact page](assets/images/contact-us-screen.png)
+
+ * I have created a page that contains a fully functional form to fill in to contact us if the user manages to complete the challenge set. The page automatically redirects to the thank you page when the form has been completed correctly. If the user makes an error they will then get redirected over to the 404 error page.
+
+ ![Thank you page](assets/images/thank-you-screen.png)
+
+ * I have created a thank you page for the user after they have completed the initial form. It uses javascript to redirect the user back to the hom epage after 5 seconds.
+
+ ![404 page](assets/images/404-screen.png)
+
+ * I have created an error page should anything go wrong for the user. I have included a message so that they can use the navigation bar to go page to the main page.
+
+ ## Possible future features
+
+ * Sounds for the cards when they flip
+ * Animation for when the player completes the challenge
+
+ # Testing
+
+ ## Testing during development
+
+ * Throughout the process of making this website, I tested my code using the preview window extension within VS Code and in the chrome browser. With chrome browser I could use Chrome Developer Tools troubleshoot any spacing issues in the CSS or Javascript bugs within the console log.
+* I would also consistently commit and push work to Github to then view live site and check responsiveness on my mobile and tablet devices, as well as passing onto friends and family to test on their devices.
+* I have also tested my site in the main browsers available, which include:
+
+  * Google Chrome
+  * Mozilla Firefox
+  * Apple Safari
+  * Microsoft Edge
+
+  ### Testing the home page
+
+  I made sure to test all elements of my website to make sure that it all works onsistently across all browsers and devices. On my home page this included:
+
+  * Logo
+    * **Expected** Clickable and will always bring you back to homepage.
+    * **Tested** Clicked from all parts of the site.
+    * **Result** Always brought me back to the homepage.
+    * **Action** None.
+
+  * Nav bar
+    * **Expected** Clickable and will always take you to the right page and will highlight current page.
+    * **Tested** Clicked from all parts of the site.
+    * **Result** Always brought me to the correct page and highlighted correct page.
+    * **Action** None.
+
+  * Card instructions image hover
+    * **Expected** Hover over the first card which should reveal a card then flip back. Click on second set of card should flip over sna stay flipped over.
+    * **Tested** hovered and clicked on all three cards.
+    * **Result** Cards acted as they should.
+    * **Action** None.
+
+  * Footer mail icon
+    * **Expected** Clickable and will always take you to the contact page.
+    * **Tested** Clicked from all parts of the site.
+    * **Result** Always brought me to the correct page.
+    * **Action** None.
+
+  * Footer social media icons
+    * **Expected** Clickable and will always take you to the right social media page.
+    * **Tested** Clicked from all parts of the site.
+    * **Result** Always brought me to the correct social media platform.
+    * **Action** None.
+
+  * Game on load
+    * **Expected** Game will load up with the correct amount of cards and will start with the cards flipping over to reveal themselves for three seconds.
+    * **Tested** Loaded page up multiple times on all devices.
+    * **Result** Worked exactly as expected.
+    * **Action** None.
+
+  * Game when being played
+    * **Expected** Cards are clickable and flip back when not correct or stay flipped when correct. Error counter should also count up whenever a mistake is made. Pop up message when game is completed.
+    * **Tested** Clicked all cards on all devices.
+    * **Result** Worked exactly as expected.
+    * **Action** None.
+
+  * Contact page
+    * **Expected** User can fill in all elements properly. When user submits correct information should send to my email and user should be directed to the thank you page.
+    * **Tested** Filled in with wrong information and correct information to make sure its works correctly.
+    * **Result** Brought up.
+    * **Action** None.
+
+  * Thank you page
+    * **Expected** Works properly when sent from the contact page. Redirects you to the hompage when the timer counts down from 5 seconds.
+    * **Tested** Following on from contact page multiple times from all devices to make sure it works.
+    * **Result** Worked exactly as expected.
+    * **Action** None.
+
+  * 404 page
+    * **Expected** Directs you to the 404 page when form is misfilled or when the url is incorrect.
+    * **Tested** Added random characters to the URL. 
+    * **Result** Always brought me to the correct page with the correct error message
+    * **Action** None.
 
 ## Bugs found and fixed during coding
 
@@ -205,4 +309,7 @@ else {
        
     }
 ```
+
+## Validator testing
+
 
